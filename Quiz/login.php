@@ -24,7 +24,7 @@ and password='".md5($password)."'";
 	$rows = mysqli_num_rows($result);
         if($rows==1){
 	    $_SESSION['username'] = $username;
-            // Redirect user to index.php
+            // Redirect user to dashboard.php
 	    header("Location: dashboard.php");
          }else{
 	echo "<div class='form'>
